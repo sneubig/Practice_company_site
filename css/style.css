@@ -1,0 +1,28 @@
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.navbar-default{
+	background-color: #891010;
+	padding: 0;
+}
+
+
+.navbar-default .navbar-nav > li > a{
+	color: white;
+}
+
+/*Collapsed Navbar Dropdown Items*/
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+	color: white;
+	background-color: #891010;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: white;
+}
+
+.dropdown-menu {
+	padding: 0;
+}
