@@ -3638,7 +3638,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-left: -1px;
 }
 .nav {
-  padding-left: 0;
+  padding-left: 2em;
   margin-bottom: 0;
   list-style: none;
 }
@@ -3862,7 +3862,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 850px) {
   .navbar-collapse {
     width: auto;
-    border-top: 0;
+ /*   border-top: 0;*/
     -webkit-box-shadow: none;
             box-shadow: none;
   }

@@ -4,12 +4,12 @@
 }
 
 .container-fluid{
-	padding-left: 0;
-	padding-right: 0;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 .row{
-	margin: 0;
+	margin: 0em;
 }
 
 .txt-center{
@@ -27,9 +27,8 @@
 
 /******** Header ********/
 header{
-	height: 5em;
+	height: 10em;
 	width: 100%;
-	background-color: green;
 	position: fixed;
 	z-index: 1000;
 	display: block;
