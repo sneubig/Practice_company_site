@@ -25,8 +25,6 @@
 	font-size: 10pt;
 }
 
-
-
 /******** Header ********/
 header{
 	height: 5em;
@@ -34,6 +32,7 @@ header{
 	background-color: green;
 	position: fixed;
 	z-index: 1000;
+	display: block;
 }
 
 header h1{
@@ -51,6 +50,10 @@ header h1{
 	margin: 0;
 	height: 3em;
 	min-height: 3em;
+}
+
+.navbar-nav{
+	float: none;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
@@ -87,7 +90,7 @@ header h1{
 
 /******** Left Sidebar ********/
 .left-sidebar{
-	height: 100%;
+	/*height: 100%;*/
 }
 
 .left-sidebar::before{
@@ -139,8 +142,29 @@ header h1{
 
 @media (max-width: 992px){
 
-    .right-sidebar {
-      display: none;
-    }
+  .right-sidebar {
+    display: none;
+  }
+
+  .navbar-default .navbar-nav > li > a{
+  	color: black;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+  	background-color: white;
+  }
+
+  /*Collapsed Navbar Dropdown Items*/
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+		background-color: #891010;
+	}
+
+	.navbar-default .navbar-nav > .active > a:hover{
+		background-color: white;
+	}
+
+	.dropdown-menu li:hover{
+		background-color: white;
+	}
 
 }

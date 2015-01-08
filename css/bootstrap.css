@@ -4022,15 +4022,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 850px) {
   .navbar-nav {
-    float: left;
+    /*float: left;*/
     margin: 0;
   }
   .navbar-nav > li {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  /*  padding-top: 15px;
+    padding-bottom: 15px;*/
   }
 }
 .navbar-form {
