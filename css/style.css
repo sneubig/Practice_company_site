@@ -38,6 +38,7 @@ header{
 
 header h1{
 	text-align: center;
+	color: white;
 }
 
 /******** Nav Bar ********/
@@ -134,4 +135,12 @@ header h1{
 
 .right-sidebar::before{
 	margin-top: 1em;
+}
+
+@media (max-width: 992px){
+
+    .right-sidebar {
+      display: none;
+    }
+
 }
