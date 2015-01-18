@@ -27,7 +27,6 @@
 
 /******** Header ********/
 header{
-	height: 5em;
 	position: fixed;
 	left: 1em;
 	right: 1em;
@@ -38,6 +37,16 @@ header{
 header h1{
 	text-align: center;
 	color: white;
+}
+
+.headroom {
+    transition: transform 500ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-200%);
 }
 
 /******** Nav Bar ********/
@@ -143,7 +152,7 @@ header h1{
 }
 
 footer{
-	background-color: #aaa;
+	background-color: black;
 }
 
 @media (max-width: 992px){
