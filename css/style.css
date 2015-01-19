@@ -70,7 +70,7 @@ header h1{
 }
 
 .navbar-fixed-top{
-	top: 5em;
+	top: 4.5em;
 	left: 1em;
 	right: 1em;
 }
@@ -79,6 +79,7 @@ header h1{
 	color: white;
 	font-family: arial, helvetica;
 	font-size: 10pt;
+	background-color: #891010;
 }
 
 /*Collapsed Navbar Dropdown Items*/
@@ -200,4 +201,29 @@ footer{
 		border-left: none;
 	}
 
+	.sponsor-logo{
+		display: inline-block;
+		margin: 1em;
+	}
+}
+
+@media (max-width: 500px){
+
+	header{
+		left: 0;
+		right: 0;
+	}
+
+	.navbar-fixed-top{
+		left: 0;
+		right: 0;
+	}
+	.container-fluid{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.sponsor-logo{
+		display: block;
+		margin: 1em auto;
+	}
 }
