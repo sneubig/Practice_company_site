@@ -31,12 +31,12 @@ header{
 	left: 1em;
 	right: 1em;
 	z-index: 1000;
-	background-color: black;
+	background-color: white;
 }
 
 header h1{
 	text-align: center;
-	color: white;
+	color: green;
 }
 
 .headroom {
@@ -114,22 +114,58 @@ header h1{
 }
 
 /******** Main Content ********/
+
+.intro{
+	height: 30em;
+	background-image: url(http://lorempixel.com/1000/400);
+	background-size: cover;
+}
+
+.about{
+	top: 5em;
+	background-color: white;
+	padding: 1em;
+	border-radius: 2em;
+}
 .main{
 	height: auto;
-	border-left: 1px solid black;
 }
 
-.main::before{
+/*.main::before{
 	margin-top: 1em;
+}*/
+
+.thumbnail{
+	text-align: center;
+	border: none;
 }
+
+#about-us{
+	height: 20em;
+	background-color: darkgreen;
+}
+
+#about-us h1{
+	color: white;
+}
+
+.section-title{
+	text-align: center;
+	text-decoration: underline;
+	position: relative;
+	top: 1em;
+}
+
 
 .main .welcome img{
-	display: block;
+	display: inline-block;
 	margin: 0 auto 1em;
+	border-radius: 100%;
+	margin: 5%;
 }
 
 .event-title{
-	background-color: yellow;
+	margin-top: 2em;
 }
 
 .event-img{
@@ -152,7 +188,26 @@ header h1{
 	margin-top: 1em;
 }
 
+#footer{
+	background-color: black;
+	color: white;
+}
 
+footer div{
+	display: inline-block;
+}
+
+#footer span{
+	display: block;
+}
+
+
+
+footer div{
+	display: inline-block;
+}
+
+/*
 @media (max-width: 992px){
 
   .right-sidebar {
@@ -206,9 +261,13 @@ header h1{
 		display: inline-block;
 		margin: 1em;
 	}
-}
 
-@media (max-width: 500px){
+	#footer{
+		background-color: black;
+	}
+}*/
+
+/*@media (max-width: 500px){
 
 	header{
 		left: 0;
@@ -231,5 +290,4 @@ header h1{
 	footer p{
 		font-size: .9em;
 	}
-	}
-}
+}*/
