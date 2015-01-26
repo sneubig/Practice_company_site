@@ -12,6 +12,10 @@
 	margin: 0em;
 }
 
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+
 .txt-center{
 	text-align: center;
 }
@@ -25,18 +29,37 @@
 	font-size: 10pt;
 }
 
+.arrow-down{
+	width: 0;
+	height: 0;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+	border-top: 2em solid black;
+}
+
 /******** Header ********/
 header{
 	position: fixed;
-	left: 1em;
-	right: 1em;
 	z-index: 1000;
 	background-color: white;
+	height: 4em;
+	width: 100%;
 }
 
 header h1{
-	text-align: center;
 	color: green;
+	margin-left: 1em;
+	margin-top: .5em;
+	display: inline-block;
+}
+
+header button{
+	float: right;
+	background-color: yellow;
+	border-radius: 45%;
+	padding: .4em;
+	margin-top: .5em;
+	margin-right: 1em;
 }
 
 .headroom {
@@ -70,9 +93,7 @@ header h1{
 }
 
 .navbar-fixed-top{
-	top: 4.5em;
-	left: 1em;
-	right: 1em;
+	top: 4em;
 }
 
 .navbar-default .navbar-nav > li > a{
@@ -97,20 +118,7 @@ header h1{
 }
 
 .content-container{
-	margin-top: 8em;
-}
-
-/******** Left Sidebar ********/
-.left-sidebar{
-	/*height: 100%;*/
-}
-
-.left-sidebar::before{
-	margin-top: 1em;
-}
-
-.ls-content{
-	margin: 0 auto;
+	margin-top: 7em;
 }
 
 /******** Main Content ********/
@@ -127,21 +135,16 @@ header h1{
 	padding: 1em;
 	border-radius: 2em;
 }
-.main{
-	height: auto;
-}
-
-/*.main::before{
-	margin-top: 1em;
-}*/
 
 .thumbnail{
 	text-align: center;
 	border: none;
+	position: relative;
+	background-color: transparent;
 }
 
 #about-us{
-	height: 20em;
+	min-height: 20em;
 	background-color: darkgreen;
 }
 
@@ -149,13 +152,16 @@ header h1{
 	color: white;
 }
 
+#about-us p{
+	margin-top: 1em;
+	color: white;
+}
+
 .section-title{
 	text-align: center;
 	text-decoration: underline;
-	position: relative;
-	top: 1em;
+	padding-top: 1em;
 }
-
 
 .main .welcome img{
 	display: inline-block;
@@ -165,7 +171,7 @@ header h1{
 }
 
 .event-title{
-	margin-top: 2em;
+	margin-top: 1em;
 }
 
 .event-img{
@@ -227,7 +233,7 @@ footer div{
   }
 
   /*Collapsed Navbar Dropdown Items*/
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+	/*.navbar-default .navbar-nav .open .dropdown-menu > li > a{
 		background-color: #891010;
 	}
 
